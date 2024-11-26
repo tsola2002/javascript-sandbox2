@@ -56,10 +56,73 @@
 // addTwoNumbers(...arr, ...arr2);
 
 //REST PARAMETER
-function someFunction(param1, ...param2) {
-    console.log(param1, param2);
-}
+// function someFunction(param1, ...param2) {
+//     console.log(param1, param2);
+// }
 
-someFunction("Hi", "There", "My", "name,", "is", "shola");
-  
+// someFunction("Hi", "There", "My", "name,", "is", "shola");
+
+//RETURN VALUES
+// function addTwoNumbers(x, y) {
+//    return x + y;
+// }
+
+
+// SAME FUNCTION TRANSLATED INTO ARROW FUNCTION
+//let addTwoNumbers = (x, y) => x + y;
+
+// let addTwoNumbers = (x, y) => {
+//     console.log("Adding...");
+//     return x + y;
+// }
+
+// let final = addTwoNumbers(5, 5);
+// console.log(final);
+
+//LOCAL VARIABLE IN SCOPE
+// function testAvailability(x) {
+//     console.log("Available here:", x);
+// }
+
+// // tested a variable in scope
+// testAvailability("Omatsola!");
+
+// //test a variable out of scope
+// console.log(x);
+
+// function testAvailability() {
+//     let y = "Omatsola";
+//     // testing variable from inside a function
+//     console.log("Available here:", y);
+// }
+
+// testAvailability();
+// //testing y from outside the function
+// console.log("from outside the fuction: ", y);
+
+// function testAvailability() {
+//     let y = "I'll return";
+//     console.log("Available here:", y);
+//     return y;
+// }
+
+// let z = testAvailability();
+// console.log("Outside the function:", z);
+// console.log("Not available here:", y);
+
+// let globalVar = "Accessible everywhere!";
+// console.log("Outside function:", globalVar);
+
+// function creatingNewScope(x) {
+//   console.log("Access to global vars inside function." , globalVar);
+// }
+
+// creatingNewScope("some parameter");
+// console.log("Still available:", globalVar);
+
+// IMMEDIATELY INVOKED FUNCTION(IIFE)
+(function(){
+    console.log("hello OMATSOLA");
+})();
+
 
