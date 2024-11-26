@@ -14,7 +14,9 @@
 
 // sayHiOmatsola();
 
-let addNumbers = (x = 2, y = 2, z = 4) => console.log(x + y + z);
+//let addNumbers = (x = 2, y = 3, z = 4) => console.log(x + y + z);
+
+
 
 
 // function addNumbers(x = 2, y = 3, z = 4) {
@@ -27,7 +29,7 @@ let addNumbers = (x = 2, y = 2, z = 4) => console.log(x + y + z);
 //addNumbers();
 //addNumbers();
 //addNumbers(x = 3);
-addNumbers(x=3, y=4, z=5);
+//addNumbers();
 
 //USING PARAMETERS IN A FUNCTION
 // function calculateAge(birthYear) {
@@ -38,4 +40,26 @@ addNumbers(x=3, y=4, z=5);
 
 
 // calculateAge(2000);
+
+//SPREAD OPERATOR
+// spreads out arguments or elemnts of an array
+// let spread = ["Welcome", "To", "NIIT"];
+// let final = ["Hello", "Omatsola", ...spread, "How", "Can I help"];
+
+// console.log(final);
+
+// function addTwoNumbers(x, y, z, a) {
+//     console.log(x + y + z + a);
+// }
+// let arr = [5, 10];
+// let arr2 = [15, 20];
+// addTwoNumbers(...arr, ...arr2);
+
+//REST PARAMETER
+function someFunction(param1, ...param2) {
+    console.log(param1, param2);
+}
+
+someFunction("Hi", "There", "My", "name,", "is", "shola");
+  
 
