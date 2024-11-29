@@ -121,8 +121,66 @@
 // console.log("Still available:", globalVar);
 
 // IMMEDIATELY INVOKED FUNCTION(IIFE)
-(function(){
-    console.log("hello OMATSOLA");
-})();
+// (function(){
+//     console.log("hello OMATSOLA");
+// })();
+
+// RECURSIVE FUNCTIONS
+// function getRecursive(nr) {
+//     console.log(nr);
+//     getRecursive(--nr);
+// }
+
+// getRecursive(4);
+function cutPieces(fruit) {
+    return fruit * 4;
+}
+
+// function fruitProcessor(apples, oranges) {
+
+//     let applePieces = cutPieces(apples);
+//     let orangePieces = cutPieces(oranges);
+
+//     let juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of orange.`;
+    
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 3));
+
+
+// NESTED FUNCTIONS
+// function doOuterFunctionStuff(nr) {
+//     console.log("Outer function");
+//     doInnerFunctionStuff(nr);
+
+//     function doInnerFunctionStuff(x) {
+//         console.log(x + 7);
+//         console.log("I can access outer variables:", nr);
+//     }
+// }
+  
+// doOuterFunctionStuff(2);
+
+// ANONYMOUS FUNCTIONS
+// let doingStuffAnonymously = function () {
+//     console.log("Not so secret though.");
+// };
+
+// doingStuffAnonymously();
+
+// SET TIMEOUT FUNCTION
+let youGotThis = function () {
+    console.log("You're doing really well, keep coding!");
+};
+
+//setTimeout(youGotThis, 5000);
+
+
+// SET INTERVAL
+//setInterval(youGotThis, 5000);
+
+
+
 
 
