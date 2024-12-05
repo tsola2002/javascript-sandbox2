@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+    <title>Element Class Manipulation using javascript</title>
     <style>
         body{
             height: 100vh;
@@ -21,24 +21,30 @@
             color: white;
             text-align: center;
         }
+
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+
+        .square.blue{
+            background-color: blue;
+        }
+
+        .hide{
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Let's find the treasure</h1>
-    <div id="forest">
-      <div id="tree1">
-        <div id="squirrel"></div>
-        <div id="flower"></div>
-      </div>
-      <div id="tree2">
-        <div id="shrubbery">
-          <div id="treasure"></div>
-        </div>
-        <div id="mushroom">
-          <div id="bug"></div>
-        </div>
-      </div>
-    </div>
-    <script src="./dom-intro.js"></script>
+    <h1>Element Class Manipulation using javascript</h1>
+    <div id="shape" class="square blue"></div>
+    <button onclick="disappear()">Disappear</button>
+    <script>
+        function disappear(){
+            document.getElementById("shape").classList.add("hide");
+        }
+    </script>
 </body>
 </html>
