@@ -36,7 +36,7 @@
         //anything in this function will happen after the page fully loads
         window.onload = function(){
             //adding an event Listener
-            document.getElementById("square").addEventListener("click", changeColor);
+            document.getElementById("square").addEventListener("mouseout", changeColor);
         }
 
         function changeColor(){
@@ -57,7 +57,7 @@
         
     </script>
     <h1>Working With Event Listeners</h1>
-    <!-- <div id="square" style="width:100px;height:100px;background-color:grey;">Click For Magic</div> -->
+    <div id="square" style="width:100px;height:100px;background-color:grey;">Click For Magic</div>
     <button onclick="addRandomNumber()">Add a number</button> 
 
    

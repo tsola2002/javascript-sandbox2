@@ -21,9 +21,9 @@
 
 
 // ADDING TEXT USING INNER TEXT
-//document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerText = "Omatsola";
+document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerText = "Omatsola";
 
-//document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerHTML = "<em>My Treasure</em>";
+document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerHTML = "<em>My Treasure</em>";
 
 
 // Accessing elements in the DOM
