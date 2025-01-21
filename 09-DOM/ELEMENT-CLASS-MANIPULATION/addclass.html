@@ -53,22 +53,22 @@
     <script>
         function addAttribute(){
             let el = document.getElementById("shape");
-            el.removeAttribute("class");
-            // el.setAttribute("style", "background-color:red;border:4px solid black");
+           // el.removeAttribute("class");
+            el.setAttribute("style", "background-color:red;border:4px solid black");
             // el.setAttribute("class", "circle");
         }
 
-        // function change(){
-        //     document.getElementById("shape").classList.remove("blue");
-        // }
+        function change(){
+            document.getElementById("shape").classList.remove("blue");
+        }
 
         // function changeVisibility(){
         //     document.getElementById("shape").classList.toggle("hide");
         // }
 
-        // function disappear(){
-        //     document.getElementById("shape").classList.add("hide");
-        // }
+        function disappear(){
+            document.getElementById("shape").classList.add("hide");
+        }
     </script>
 </body>
 </html>

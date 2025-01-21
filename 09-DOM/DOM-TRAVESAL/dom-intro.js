@@ -3,44 +3,49 @@
 
 
 // Basic DOM traversing
-//console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure);
+console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure);
 
-// console.dir(document.body.children.forest.children.tree1.children.flower);
+console.dir(document.body.children.forest.children.tree1.children.flower);
 
-//console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1]);
+console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1]);
 
 // MOVING UP THE DOM STRUCTURE
-//console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure.parentElement);
+console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure.parentElement);
 
-//console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1].parentElement);
+console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1].parentElement);
 
 // TRAVERSING SIDEWAYS THROUGH THE DOM STRUCTURE
-//console.dir(document.body.children.forest.children.tree2.previousElementSibling);
+console.dir(document.body.children.forest.children.tree2.previousElementSibling);
 
-//console.dir(document.body.children.forest.children.tree1.nextElementSibling);
+console.dir(document.body.children.forest.children.tree1.nextElementSibling);
 
 
 // ADDING TEXT USING INNER TEXT
+document.querySelector("#zap").innerText = "Nkechi";
+
 document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerText = "Omatsola";
 
 document.body.children.forest.children.tree2.children.shrubbery.children.treasure.innerHTML = "<em>My Treasure</em>";
 
 
 // Accessing elements in the DOM
-let element = document.getElementById("bug");
+// let element = document.getElementById("bug");
 
-let spy = document.getElementsByClassName("insect");
+// let spy = document.getElementsByClassName("insect");
 
 //console.log(spy);
 //console.log(element);
 
 // let divElements = document.getElementsByTagName("div");
 
+//console.log(document.getElementsByTagName("div").item(3));
 // let tagItem = document.getElementsByTagName("div").item(3);
+ 
+// console.log(document.querySelector("#shrubbery"));
 
-let tagItem = document.getElementsByTagName("div").namedItem("bug");
+// let tagItem = document.getElementsByTagName("div").namedItem("bug");
 
-console.log(tagItem);
+// console.log(tagItem);
 
 // console.log(divElements);
 

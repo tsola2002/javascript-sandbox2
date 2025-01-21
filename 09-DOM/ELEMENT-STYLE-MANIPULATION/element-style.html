@@ -27,10 +27,11 @@
     <h1>Element Manipulation using javascript</h1>
     <script>
         function toggleDisplay(){
-            let p = document.getElementById("magic");
+        let p = document.getentById("magic");
 
             if(p.style.display === "none"){
                 p.style.display = "block";
+                p.style.backgroundColor = "red";
             } else {
                 p.style.display = "none";
             }

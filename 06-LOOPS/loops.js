@@ -1,11 +1,13 @@
 // WHILE LOOPS
-// let number = 0;
+let number = 0;
+let secondNumber = 1;
 
-// while (number <= 10) {
-//     console.log(number);
-//     number++;
-//     //++number;
-// }
+while (number <= 10) {
+  console.log(number);
+  number++;
+  secondNumber++;
+    //++number;
+}
 
 // let names = ["Jude", "Elvis", "Amara", "Nkechi", "Arnold", "Destiny"];
 
@@ -111,32 +113,32 @@
 //     }
 // }
 
-let cars = [
-    {
-      model: "Golf",
-      make: "Volkswagen",
-      year: 1999,
-      color: "black",
-    },
-    {
-      model: "Picanto",
-      make: "Kia",
-      year: 2020,
-      color: "red",
-    },
-    {
-      model: "Peugeot",
-      make: "208",
-      year: 2021,
-      color: "black",
-    },
-    {
-      model: "Fiat",
-      make: "Punto",
-      year: 2020,
-      color: "black",
-    }
-];
+// let cars = [
+//     {
+//       model: "Golf",
+//       make: "Volkswagen",
+//       year: 1999,
+//       color: "black",
+//     },
+//     {
+//       model: "Picanto",
+//       make: "Kia",
+//       year: 2020,
+//       color: "red",
+//     },
+//     {
+//       model: "Peugeot",
+//       make: "208",
+//       year: 2021,
+//       color: "black",
+//     },
+//     {
+//       model: "Fiat",
+//       make: "Punto",
+//       year: 2020,
+//       color: "black",
+//     }
+// ];
   
 // USING BREAK STATEMENT
 // for (let i = 0; i < 7; i++){
@@ -167,14 +169,14 @@ let cars = [
 
 //MULTIPLICATION TABLE
 
-let finalTable = [];
-let value = 11;
-for (let x = 0; x < value; x++){
-    let temp = [];
-    for (let y = 0; y < value; y++){
-        temp.push(x * y);
-    }
-    finalTable.push(temp)
-}
+// let finalTable = [];
+// let value = 11;
+// for (let x = 0; x < value; x++){
+//     let temp = [];
+//     for (let y = 0; y < value; y++){
+//         temp.push(x * y);
+//     }
+//     finalTable.push(temp)
+// }
 
-console.table(finalTable);
+// console.table(finalTable);
