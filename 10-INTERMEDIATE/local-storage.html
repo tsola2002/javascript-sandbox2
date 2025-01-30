@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to top left, #28b487, #7dd56f);
+        }
+
+        h1{
+            font-family: sans-serif;
+            font-size: 50px;
+            line-height: 1.3;
+            width: 100%;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body> 
+    <h1>WORKING WITH LOCAL STORAGE</h1>
+
+    <div id="stored">
+
+    </div>
+    <script>
+      let message = "Hello From Local Storage";
+
+      let message2 = "Hello From Local Storage2";
+
+      //SAVE VARIABLE INTO LOCAL STORAGE
+      localStorage.setItem("shola", message);
+      localStorage.setItem("shola2", message2);
+
+      if(localStorage.getItem("shola")){
+        // document.getElementById("stored").innerHTML = localStorage.getItem("shola");
+        document.querySelector("#stored").innerHTML = localStorage.getItem("shola");
+      }
+
+      //ACCESSING THE ITEMS USING THE INDEX
+      console.log(window.localStorage.key(2));
+
+      //localStorage.removeItem("shola");
+
+      //localStorage.removeItem("shola2");
+
+      //THIS WILL REMOVE EVERTHING FROM LOCAL STORAGE
+      //localStorage.clear();
+
+    </script>
+</body>
+</html>
